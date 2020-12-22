@@ -1,18 +1,20 @@
 #include "BankLoanProject.h"
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
+
+float roundUpPayMent(float zePayment);
 
 void zeOutput()
 {
 	//Notes:
 	//House cleaning
-	//Put this in a GitHub repo
 	//Created the nested loop
 
 	//Basic Variables
-	int numbers[3];
+	float numbers[3];
 
 	float IM;
 	float P;
@@ -33,13 +35,10 @@ void zeOutput()
 
 	//Calculations
 	numbers[2] *= 12;
-	IM = ((float)numbers[1] / 12) / 100;
+	IM = (numbers[1] / 12) / 100;
 	P = pow(1 + IM, numbers[2]);
 	Q = P / (P - 1);
 	monthlyPayment = numbers[0] * IM * fabs(Q);
-
-	calculatedMonthlyInterest = numbers[0] * IM;
-	totalCalculatedMonthlyInterest += calculatedMonthlyInterest;
 
 	cout << endl;
 
@@ -52,15 +51,46 @@ void zeOutput()
 
 	cout << endl;
 
-	//Assuming this is the 1st Month
+	//Assuming this is the 1st Month (Open this after the nested loop debug)
 	cout << "\nMonthly Payment:\t" << monthlyPayment;
-	cout << "\nInterest (January):\t" << calculatedMonthlyInterest;
-	cout << "\nTotal Interest:\t" << totalCalculatedMonthlyInterest;
+	cout << "\nRounded Payment:\t" << roundUpPayMent(monthlyPayment);
 	cout << "\nPrincipal (Monthly):\t" << monthlyPayment - (numbers[0] * IM);
 	cout << "\nModified Principal:\t" << numbers[0] - (monthlyPayment - (numbers[0] * IM));
+
+	cout << "\n\n";
+
+
+
+	cout << "\n\n";
+
+	cout << left << setw(14) << "Month" << setw(14) << "Payment" << setw(8) << "Principal Payment" << right << setw(12) << "Interest" << setw(16) << "Total Interest" << setw(14) << "Balance" << endl;
+	for (int i = 1; i <= numbers[2]; i++)
+	{
+		float monthlyPaymentContainer = roundUpPayMent(monthlyPayment);
+
+		calculatedMonthlyInterest = numbers[0] * IM;
+
+		totalCalculatedMonthlyInterest += calculatedMonthlyInterest;
+		monthlyPaymentContainer -= calculatedMonthlyInterest;
+		numbers[0] -= monthlyPaymentContainer;
+
+		cout << "Month " << right << setfill('0') << setw(2) << i;
+		cout << fixed << setprecision(2);
+		cout << right << setfill(' ') << setw(13) << monthlyPayment;
+		cout << right << setw(24) << monthlyPaymentContainer;
+		cout << right << setw(12) << calculatedMonthlyInterest;
+		cout << right << setw(16) << totalCalculatedMonthlyInterest;
+		cout << right << setw(14) << numbers[0];
+		cout << endl;
+	}
 
 	cout << endl;
 
 	//Date
 }
 
+float roundUpPayMent(float zePayment)
+{
+	float saidValue = (int)(zePayment * 100 + .5);
+	return (float)saidValue / 100;
+}
