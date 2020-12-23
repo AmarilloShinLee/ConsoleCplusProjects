@@ -5,3 +5,5 @@ This is a single Console Application project using C++ language with several cla
 Feel free to check it out, clone, or study each class for your projects that might help you.
 
 Happy Journeys in programming!
+
+P.S. This will be having major updates until the end of my semester.
