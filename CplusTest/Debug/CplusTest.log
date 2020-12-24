@@ -1,3 +1,2 @@
 ﻿  BankLoanProject.cpp
-C:\Users\gabri\source\repos\CplusTest\CplusTest\BankLoanProject.cpp(94,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   CplusTest.vcxproj -> C:\Users\gabri\source\repos\CplusTest\Debug\CplusTest.exe
