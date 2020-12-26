@@ -1,2 +1,3 @@
 ﻿  BankLoanProject.cpp
+C:\Users\gabri\source\repos\CplusTest\CplusTest\BankLoanProject.cpp(134): warning C4715: 'monthChecker': not all control paths return a value
   CplusTest.vcxproj -> C:\Users\gabri\source\repos\CplusTest\Debug\CplusTest.exe
