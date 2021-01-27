@@ -1,3 +1,4 @@
-﻿  BankLoanProject.cpp
-C:\Users\gabri\source\repos\CplusTest\CplusTest\BankLoanProject.cpp(134): warning C4715: 'monthChecker': not all control paths return a value
+﻿  GuessingGame.cpp
+C:\Users\gabri\source\repos\CplusTest\CplusTest\GuessingGame.cpp(163,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gabri\source\repos\CplusTest\CplusTest\GuessingGame.cpp(170): warning C4715: 'checkInput_GuessGame': not all control paths return a value
   CplusTest.vcxproj -> C:\Users\gabri\source\repos\CplusTest\Debug\CplusTest.exe

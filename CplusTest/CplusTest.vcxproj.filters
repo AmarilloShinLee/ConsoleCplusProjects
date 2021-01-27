@@ -13,49 +13,64 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Second_Sem">
+      <UniqueIdentifier>{2d623614-525f-485a-90a7-6b5199ab35c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\First_Sem">
+      <UniqueIdentifier>{1e8abd3b-6e2f-467f-bc3b-4241db3cafec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CplusTest.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GuessingGame.cpp">
+      <Filter>Source Files\Second_Sem</Filter>
     </ClCompile>
-    <ClCompile Include="differentDataInput.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ATMSystem.cpp">
+      <Filter>Source Files\Second_Sem</Filter>
     </ClCompile>
-    <ClCompile Include="ReverseArrangment.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SessionCounts.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConversionPartTwo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Fibonacci.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NumberTriangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Grades.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BasicCalculator.cpp">
+      <Filter>Source Files\Second_Sem</Filter>
     </ClCompile>
     <ClCompile Include="AreaOfCircle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ThreeNumbers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TheCalculator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ParkingLotConsole.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="testArea.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\First_Sem</Filter>
     </ClCompile>
     <ClCompile Include="BankLoanProject.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversionPartTwo.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="CplusTest.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="differentDataInput.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibonacci.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="Grades.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberTriangle.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="ParkingLotConsole.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseArrangment.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionCounts.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="testArea.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="TheCalculator.cpp">
+      <Filter>Source Files\First_Sem</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeNumbers.cpp">
+      <Filter>Source Files\First_Sem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +111,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BankLoanProject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATMSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessingGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

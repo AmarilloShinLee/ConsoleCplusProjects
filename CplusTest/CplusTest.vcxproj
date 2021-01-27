@@ -140,12 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AreaOfCircle.cpp" />
+    <ClCompile Include="ATMSystem.cpp" />
     <ClCompile Include="BankLoanProject.cpp" />
+    <ClCompile Include="BasicCalculator.cpp" />
     <ClCompile Include="ConversionPartTwo.cpp" />
     <ClCompile Include="CplusTest.cpp" />
     <ClCompile Include="differentDataInput.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Grades.cpp" />
+    <ClCompile Include="GuessingGame.cpp" />
     <ClCompile Include="NumberTriangle.cpp" />
     <ClCompile Include="ParkingLotConsole.cpp" />
     <ClCompile Include="ReverseArrangment.cpp" />
@@ -156,11 +159,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AreaOfCircle.h" />
+    <ClInclude Include="ATMSystem.h" />
     <ClInclude Include="BankLoanProject.h" />
+    <ClInclude Include="BasicCalculator.h" />
     <ClInclude Include="ConversionPartTwo.h" />
     <ClInclude Include="differentDataInput.h" />
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="Grades.h" />
+    <ClInclude Include="GuessingGame.h" />
     <ClInclude Include="NumberTriangle.h" />
     <ClInclude Include="ParkingLotConsole.h" />
     <ClInclude Include="ReverseArrangment.h" />

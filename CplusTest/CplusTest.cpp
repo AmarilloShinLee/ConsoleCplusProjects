@@ -9,15 +9,37 @@
 //#include "TheCalculator.h"
 //#include "ParkingLotConsole.h"
 //#include "testArea.h"
-#include "BankLoanProject.h"
+//#include "BankLoanProject.h"
+#include "BasicCalculator.h"
+#include "ATMSystem.h"
+#include "GuessingGame.h"
 
 using namespace std;
 
+enum Classes 
+{ 
+    basicCalculator,
+	atmSystem,
+	guessingGame
+};
+
 int main()
 {
-    zeOutput();        
+    Classes classInput = guessingGame;
 
-    cout << "\nCreated by Gabriel Alpha Aguilar\n";
-
-    return 0;
+	switch (classInput)
+	{
+	case basicCalculator:
+			return BasicCalculatorMain();
+		break;
+	case atmSystem:
+			return ATMSystemMain();
+		break;
+	case guessingGame:
+			return GuessingGameMain();
+		break;
+	default:
+			return 0;
+		break;
+	}
 }

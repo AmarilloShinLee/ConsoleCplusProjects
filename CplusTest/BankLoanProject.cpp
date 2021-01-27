@@ -8,7 +8,7 @@
 using namespace std;
 
 //Main Variables
-double numbers[arraySize]; 
+double numbers[arraySize];
 double IM, P, Q, monthlyPayment;
 double totalCalculatedMonthlyInterest;
 int month, year;
@@ -32,7 +32,7 @@ void zeOutput()
 	rightThisMoment = _localtime64_s(&atTheMoment, &typeTime);
 
 	//Assigning Variables
-	month = 1 + atTheMoment.tm_mon;
+	month = 2 + atTheMoment.tm_mon;
 	year = 1900 + atTheMoment.tm_year;
 	totalCalculatedMonthlyInterest = 0;
 
@@ -57,10 +57,11 @@ void zeOutput()
 	//Output and calculations
 	monthlyPayment = calculateMonthlyPayment(numbers[0], numbers[1]);
 	cout << endl;
+
 	amortizationTable();
 	cout << endl;
-	printInformation();
 
+	printInformation();
 	cout << endl;
 }
 
@@ -76,6 +77,7 @@ double userInput()
 		cin.ignore();
 		cout << "\tError, not a number. Please try again:\t";
 		cin >> input;
+		cout << endl;
 	}
 
 	return input;
